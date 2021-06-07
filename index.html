@@ -1,0 +1,64 @@
+<!--
+    This is the HTML file for the grid page.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Welcome To Your Own Personal Table!</h1>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class = mainLayout>
+            <div class = toolbox>
+                <p class = toolboxTitle>ToolBox</p>
+                <!--Dropdown Menu-->
+                <select id="colors">
+                    <option value="white">White</option>
+                    <option value="pink">Pink</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="orange">Orange</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="purple">Purple</option>
+                </select>
+                <br>
+                <!--Buttons-->
+                <button id="addRowButton">Add Row</button><br>
+                <button id="addColumnButton">Add Column</button><br>
+                <button id="removeRowButton">Remove Row</button><br>
+                <button id="removeColumnButton">Remove Column</button><br>
+                <button id="fillEmptyCellsButton">Fill All Empty Cells</button><br>
+                <button id="colorAllButton">Color All</button><br>
+                <button id="clearAllColor">Clear Color</button>
+                
+            </div>
+
+            <div class = tableWorkspace>
+                <!--Table tag creates a table
+                    ~*~Remember~*~
+                    tr = table row
+                    td = table data-->
+                <p class=gridTitle>Your Grid</p>
+                <table id = "Table" border="1" contenteditable = "true">
+                    <!--These are the headers... not able to edit-->
+                    <tr>
+                        <td>You can</td>
+                        <td>Type in</td>
+                        <td>These boxes!</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    </body>
+
+    <!--Credits At The Bottom of Page-->
+    <footer>
+        <p>Made by Brianna Duvivier</p>
+    </footer>
+
+    <!--Connecting Script with HTML-->
+    <script src="index.js"> </script>
+</html>
